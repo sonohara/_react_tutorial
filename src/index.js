@@ -36,6 +36,7 @@ class Board extends React.Component {
 
   handleClick(i) {
     // 配列のコピーを作成する
+    // https://ja.reactjs.org/tutorial/tutorial.html#why-immutability-is-important
     const squares = this.state.squares.slice();
     squares[i] = "X";
     this.setState({ squares: squares });
